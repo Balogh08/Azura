@@ -18,7 +18,6 @@ namespace NetCoreCalculator.IntegrationTests.Fixtures
 
             server = new TestServer(builder);
             Client = server.CreateClient();
-            Client.BaseAddress = new Uri("http://localhost:53497/");
         }
 
         public void Dispose()
