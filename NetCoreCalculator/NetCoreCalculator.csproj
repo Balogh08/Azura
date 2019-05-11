@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include=".circleci\config.yml" />
+    <None Include="wwwroot\.circleci\config.yml" />
   </ItemGroup>
 
 </Project>
