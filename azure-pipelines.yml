@@ -18,12 +18,7 @@ steps:
   displayName: 'dotnet build $(buildConfiguration)'
 - script: echo hello from Windows
 
-- task: NuGetCommand@2
-  inputs:
-    command: 'restore'
-    restoreSolution: '**/*.sln'
-    feedsToUse: 'select'
-    versioningScheme: 'off'
+
 
 - task: DotNetCoreCLI@2  
   inputs:
