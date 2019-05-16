@@ -22,10 +22,13 @@ steps:
     command: test
     projects: '**/*Test/*.csproj'
     arguments: '--configuration $(buildConfiguration)'
+  continueOnError: true
 
 - task: DotNetCoreCLI@2  
   inputs:
     command: test
     projects: '**/*Tests/*.csproj'
     arguments: '--configuration $(buildConfiguration)'
+  continueOnError: true
 
+- task: PublishBuildArtifacts@1
