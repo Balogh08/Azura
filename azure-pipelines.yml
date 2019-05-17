@@ -22,7 +22,7 @@ steps:
 - task: PublishCodeCoverageResults@1
   inputs:
     codeCoverageTool: 'JaCoCo'
-    summaryFileLocation: 
+    summaryFileLocation: $(System.DefaultWorkingDirectory)/MyApp/**/site/cobertura/coverage.xml
 
 - task: DotNetCoreCLI@2  
   inputs:
